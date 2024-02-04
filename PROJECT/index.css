@@ -1,0 +1,595 @@
+@media only screen and (max-width:2600px) {
+    body{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 100%;
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+li a{
+    text-decoration: none;
+}
+.phone0{
+    background-color:rgb(60, 60,60);
+    color: white;
+    height: 20px;
+    padding: 10px;
+    }
+    .phone1{
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+    }
+    .phone2{
+        float: right;
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+        display: block;
+        width: fit-content;
+    }
+    .phone1:hover,.phone2:hover{
+        color: orangered;
+    } 
+    .fa-solid{
+    color: white;
+    margin-right: 5px;
+    }
+     .nav1{
+       position: sticky;
+       top: -33px;
+    } 
+    .logo{
+        color: white;
+        font-size: 33px;
+        line-height: 60px;
+        font-weight: bold;
+        padding-left: 110px;
+        cursor: pointer;
+        }
+    .logo a{
+        text-decoration: none;
+        color: #fff;
+    }
+    #bar{
+        display: none;
+    } 
+    .nav{
+        top: 32px;
+        right: 0px;
+        height: 70px;
+        background: #000000c4;
+        box-shadow: 0 3px 15px rgba(0,0,0,.4);
+        position: absolute;
+        width: 100%;
+    }
+    .nav ul{
+        float: right;
+        margin-top: 0px;
+    } 
+    .nav ul li{
+        display: inline-block;
+        text-transform: uppercase;
+    }  
+    .nav ul li a{
+        color: white;
+        display: block;
+        padding: 0 15px;
+        line-height: 70px;
+        font-size: 20px;
+        transition: all .5s;
+        width: 100px;
+        text-align: center;
+    }
+    .nav ul li a:hover,
+    .nav ul li a.active{
+        color: #23dbdb;
+        background: black;
+        transition: 0.5s;
+}
+#check{
+    display: none;
+}
+.nav ul ul{
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 36;
+    padding-left: 0;
+    background-color: #000000f5;
+    }
+    .nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+    margin-left: -30px;
+    }
+    .nav ul ul li{
+    width: 200px;
+    display: list-item;
+    position: relative;
+    border-top: none;
+    text-align: center;
+    }
+    .nav ul ul li a{
+    width: 200px;
+    padding: 0;
+    line-height: 50px;
+    background: black;
+    text-transform:capitalize;
+    }
+    .nav ul ul ul{
+    border-top: none;
+    }
+    .nav ul ul li a i{
+    margin-left: 45px;
+    } 
+    .img{
+        width: 100%;
+    }
+    .nav1{
+    position: sticky;
+    top: -33px;
+    z-index: 36;
+    }
+    .img{
+        width: 100%;
+        height: 90vh;
+    }
+    .para{
+        position: absolute;
+        bottom: 50PX;
+        top: 225px;
+        left: 10%;
+        right: 10%;
+        text-align: center;
+        color: white;
+    }
+    .span0{
+        font-size: 50px;
+        text-align: center;
+    }
+    .p{
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bolder;
+        text-shadow: 2px 2px 3px black,4px 4px 4px white,3px 3px 4px black;
+    }
+    .but{
+        background: #fff;
+        padding: 15PX;
+        font-weight: bolder;
+        box-shadow: 4px 4px 5px coral;
+        cursor: pointer;
+        transition: 1s;
+        position: relative;
+        overflow: hidden;
+        z-index: 10;
+    }
+    .button:hover{
+        color: #fff;
+        box-shadow: 4px 4px 5px white;
+    }
+    .but::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: orangered;
+        z-index: -2;
+        transition:  1s;
+    }
+    .button::before{
+        bottom: 0;
+        border-radius: 50% 50% 0 0;
+    }
+    .button:hover::before{
+        height: 180%;
+        transition: 2s;
+    }
+    .container {
+        position: relative;
+        width: 200px;
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        }
+        
+        .image {
+        opacity: 1;
+        display: block;
+        width: 200px;
+        height: 200px;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border: 2px solid black;
+        box-shadow: 4px 4px 5px gray;
+        }
+        
+        .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        bottom: 7px;
+        text-align: center;
+        }
+        
+        .container:hover .image {
+        opacity: 0.3;
+        transform: scale(1.1);
+        }
+        
+        .container:hover .middle {
+        opacity: 1;
+        }
+        .flex{
+        text-align: -webkit-center;
+        margin-top: 60px;
+        }
+        .p1{
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bolder;
+        margin-top: 70px;
+        }
+        .p2{
+        text-align: center;
+        font-size: x-large;
+        }
+        .span1{
+        color: coral;
+        }
+        .span2{
+        color: red;
+        }
+        .btn{
+            border: 1px solid black;
+            background: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: 1s;
+            overflow: hidden;
+            position: relative;
+            z-index: 10;
+        }
+        .button1{
+        top: -31px;
+        right: -95px;
+        font-size: larger;
+        font-weight: bolder;
+        }
+        .button2{
+        font-weight: bolder;
+        width: 50px;
+        }
+        .button1:hover,.button2:hover{
+        transform: scale(1.1);
+        background-color: black;
+        color: white;
+        }
+        .btn::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background: black;
+            z-index: -2;
+            transition: 1s;
+        }
+        .button1::before,.button2::before{
+            bottom: 0;
+        
+        }
+        .button1:hover::before,.button2:hover::before{
+            transition: 2s;
+            height: 180%;
+        }
+        .span5{
+            color: coral;
+            
+        }
+        .p5{
+            margin-top: 60px;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .text2{
+            margin-left: 65px;
+        }
+        .middle p .fa{
+            width: 28px;    
+            color: gray; 
+            font-size: x-large; 
+            padding: 8px;
+            transition: 1s;
+            position: relative;
+            overflow: hidden;
+            z-index: 10;
+            transition: color 0.2s;
+            border: 1px solid gray;
+        }
+        .middle p .fa::after{  
+            content: "";
+            position: absolute; 
+            left: 0;
+            bottom: -50px;
+            width: 100%;
+            height: 100%;
+            background: orangered;
+            color: #fff;
+            transition: 1s;
+            z-index: -2;
+        }
+        .middle p .fa:hover::after{
+            bottom:0;
+        }
+        .middle p .fa:hover {
+            color: #fff;
+        }
+        .span4{
+            color: coral;
+            font-weight: bolder;
+        }
+        .p4{
+            color: #fff;    
+            font-size:50px;
+            font-weight: bolder;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .div5{
+            margin-top: 40px;
+            position: relative;
+            background: #1b1b1b;
+        }
+        .div5 iframe{
+                margin-left: 20px;
+                margin-bottom: 80px;
+        }
+        .contact{
+            position: absolute;
+            top: 15%;
+            right: 10%;
+            text-align: center;
+        }
+        .input1{
+            margin-top: 50px;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid gray;
+            width: 500px;
+            padding-bottom: 40px;
+            background:#1b1b1b ;
+            color: #fff;
+        }
+        .but3{
+            margin-top: 50px;
+            background: #1b1b1b;
+            padding: 10PX;
+            cursor: pointer;
+            transition: 1s;
+            position: relative;
+            overflow: hidden;
+            z-index: 10;
+            text-transform: capitalize;
+            border-radius: 5px;
+            font-weight: bold;
+            outline: none;
+            color: #fff;
+            border: none;
+        }
+        .but4:hover{
+            color: #fff;;
+        }
+        .but4::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 0%;
+            height: 100%;
+            background: orangered;
+            z-index: -2;
+            transition:  1s;
+        }
+        .but4::before{
+            right: 0;
+        }
+        .but4:hover::before{
+            width: 180%;
+            transition: 2s;
+        }
+        footer{
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(60, 60,60);
+        color: white;
+        }
+}
+@media only screen and (max-width:1400px) {
+    .logo{
+        padding-left: 50px;
+    }
+    .para{
+        left: 10%;
+        right: 10%;
+    }
+}   
+@media only screen and (max-width:1280px) {
+    .contact{
+        right: 5%;
+    }
+    .input1{
+        width: 420px;
+    }
+}
+@media only screen and (max-width:1197px){
+    .logo{
+        padding-left: 40px;
+        line-height: 60px;
+    }
+    .nav ul li a{
+        padding: 0 ;
+        font-size: 14px;
+        width: 77px;
+    }
+}
+@media only screen and (max-width:1140px) {
+    .contact{
+        right: 5%;
+    }
+    .input1{
+        width: 420px;
+    }
+    .div5 iframe{
+        width: 500px;
+    }
+}
+@media only screen and (max-width:1010px) {
+    .span0{
+        font-size: 39px;
+    }
+    .p{
+        font-size: 24px;
+    }
+    .but{
+        padding: 9px;
+    }
+    .contact{
+        right: 4%;
+    }
+    .input1{
+        width: 350px;
+    }
+    .div5 iframe{
+        width: 450px;
+    }
+}
+@media only screen and (max-width:877px){
+    .contact{
+        right: 2%;
+    }
+    .input1{
+        width: 300px;
+    }
+}
+@media only screen and (max-width:830px) {
+    .phone0{
+        display: none;
+    }
+    .nav1{
+        position: unset;
+        width: 100%;
+        height: 45px;
+    }
+    .logo{
+        font-size: 30px;
+        padding-left: 30px;
+        line-height: normal;
+    }
+    #bar{
+        float: right;
+        line-height: 45px;
+        font-size:30px ;
+        font-weight: bold;
+        display: block;
+    }
+    .img{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .nav{
+        position: unset;
+        background-color: #000000c4;
+        margin: 0px;
+        height: 45px;
+    }
+    .nav ul{
+        position:fixed;
+        float: none;
+        margin-right: 0px;
+        padding: 0px;
+        text-align: center;
+        left: -100%;
+        transition: all .5s;
+        background-color: #000000;
+        width: 100%;
+        z-index: 12;
+    }
+    .nav ul li{
+        display: block;
+        text-align: -webkit-center;
+    }
+    .nav ul li a{
+        text-align: center;
+    }
+    #check{
+        display: none;
+    }
+    #check:checked ~ .nav ul {
+        left: 0%;
+    }
+    .nav ul ul {
+        display: none;
+    }
+    .div5 iframe{
+        width: 100%;
+        margin-left: unset;
+    }
+    .contact{
+        position: unset;
+    }
+    .input1{
+        width: 300px;
+    }
+}  
+@media only screen and (max-width:700px) {
+    .span0{
+        font-size: 33px;
+    }
+    .p{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .span0{
+        font-size: 25px;
+    }
+    .p{
+        font-size: 13px;
+    }
+    .but{
+        padding: 7px;
+    }
+}
+@media only screen and (max-width:425px) {
+    .span0{
+        font-size: 23px;
+    }    
+    .p{
+        font-size: 10px;
+    }
+    .p1{
+        font-size: 24px;
+        font-weight: bolder;
+        }
+        .p2{
+        font-size: 20px;
+        }
+    .p5{
+        font-size: 24px;
+        font-weight: bolder;
+    }
+    footer{
+        font-size: 12px;
+    }
+}

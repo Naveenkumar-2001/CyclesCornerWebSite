@@ -1,0 +1,399 @@
+@media only screen and (max-width:2600px) {
+    body{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 100%;
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+li a{
+    text-decoration: none;
+}
+.phone0{
+    background-color:rgb(60, 60,60);
+    color: white;
+    height: 20px;
+    padding: 10px;
+    }
+    .phone1{
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+    }
+    .phone2{
+        float: right;
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+        display: block;
+        width: fit-content;
+    }
+    .phone1:hover,.phone2:hover{
+        color: orangered;
+    } 
+    .fa-solid{
+    color: white;
+    margin-right: 5px;
+    }
+     .nav1{
+       position: sticky;
+       top: -33px;
+    } 
+    .logo{
+        color: white;
+        font-size: 33px;
+        line-height: 60px;
+        font-weight: bold;
+        padding-left: 110px;
+        cursor: pointer;
+        }
+    .logo a{
+        text-decoration: none;
+        color: #fff;
+    }
+    #bar{
+        display: none;
+    } 
+    .nav{
+        top: 32px;
+        right: 0px;
+        height: 70px;
+        background: #000000c4;
+        box-shadow: 0 3px 15px rgba(0,0,0,.4);
+        position: absolute;
+        width: 100%;
+    }
+    .nav ul{
+        float: right;
+        margin-top: 0px;
+    } 
+    .nav ul li{
+        display: inline-block;
+        text-transform: uppercase;
+    }  
+    .nav ul li a{
+        color: white;
+        display: block;
+        padding: 0 15px;
+        line-height: 70px;
+        font-size: 20px;
+        transition: all .5s;
+        width: 100px;
+        text-align: center;
+    }
+    .nav ul li a:hover,
+    .nav ul li a.active{
+        color: #23dbdb;
+        background: black;
+        transition: 0.5s;
+}
+#check{
+    display: none;
+}
+.nav ul ul{
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 36;
+    padding-left: 0;
+    background-color: #000000f5;
+    }
+    .nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+    margin-left: -30px;
+    }
+    .nav ul ul li{
+    width: 200px;
+    display: list-item;
+    position: relative;
+    border-top: none;
+    text-align: center;
+    }
+    .nav ul ul li a{
+    width: 200px;
+    padding: 0;
+    line-height: 50px;
+    background: black;
+    text-transform:capitalize;
+    }
+    .nav ul ul ul{
+    border-top: none;
+    }
+    .nav ul ul li a i{
+    margin-left: 45px;
+    } 
+    .img{
+        width: 100%;
+    }
+    .nav1{
+    position: sticky;
+    top: -87px;
+    z-index: 36;
+    }
+    .accountpage{
+        border: 2px solid black;
+        padding: 10px;
+        float: left;
+        margin-left: 26%;
+        width: 400px;
+        position: relative;
+    } 
+    .act{
+        margin-left: 20px;
+    }
+    .act a{
+        text-decoration: none;
+        float: right;
+        margin-right: 20px;
+    }
+    .act a:hover{
+        color:orangered ;
+    }
+    .ln{
+        position: absolute;
+        right: 5px;
+        top:127px;
+    }
+    .ph{
+        position: absolute;
+        right: 5px;
+        top:207px; 
+    }
+    .accountpage input{
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+     .input{
+        width: 380px;
+    } 
+    .button{
+        text-align: center;
+    }
+    button{
+        padding: 5px;
+        outline: none;
+        border: none;
+    }
+    button:hover{
+        background: gray;
+    }
+    .accountpage1{
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 54%; 
+        width: 400px;
+    }
+    .accountpage1 input{
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 380px;
+    }
+    .footer{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(60, 60,60);
+    color: white;
+    float: none;
+    }
+}
+@media only screen and (max-width:1800px) {
+        .accountpage{
+            margin-left:21% ;
+        }
+        .accountpage1{
+            margin-left: 57%;
+        }
+}
+@media only screen and (max-width:1400px) {
+        .logo{
+            padding-left: 50px;
+        }
+        .accountpage{
+            margin-left:15% ;
+        }
+        .accountpage1{
+            margin-left: 57%;
+        }
+}
+@media only screen and (max-width:1197px){
+        .logo{
+            padding-left: 40px;
+            line-height: 60px;
+        }
+        .nav ul li a{
+            padding: 0 ;
+            font-size: 14px;
+            width: 77px;
+        }
+        .accountpage{
+            margin-left:4% ;
+        }
+        .accountpage1{
+            margin-left: 51%;
+        }
+        .act{
+            margin-left: 20px;
+            font-size: 30px;
+        }
+        .act a{
+            text-decoration: none;
+            float: right;
+            margin-right: 20px;
+            font-size: 30px;
+        }
+} 
+ @media only screen and (max-width:960px) {
+        /* .accountpage{
+            margin-left: 4%;
+        }*/
+        .accountpage1{
+            margin: 25px auto;
+        } 
+        .accountpage{
+            float: none;
+            margin: 52px auto;
+        }
+        
+}
+@media only screen and (max-width:830px) {
+    .phone0{
+        display: none;
+    }
+    .nav1{
+        position: unset;
+        width: 100%;
+        height: 45px;
+    }
+    .logo{
+        font-size: 30px;
+        padding-left: 30px;
+        line-height: normal;
+    }
+    #bar{
+        float: right;
+        line-height: 45px;
+        font-size:30px ;
+        font-weight: bold;
+        display: block;
+    }
+    .img{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .nav{
+        position: unset;
+        background-color: #000000c4;
+        margin: 0px;
+        height: 45px;
+    }
+    .nav ul{
+        position:fixed;
+        float: none;
+        margin-right: 0px;
+        padding: 0px;
+        text-align: center;
+        left: -100%;
+        transition: all .5s;
+        background-color: #000000;
+        width: 100%;
+        z-index: 12;
+    }
+    .nav ul li{
+        display: block;
+        text-align: -webkit-center;
+    }
+    .nav ul li a{
+        text-align: center;
+    }
+    #check{
+        display: none;
+    }
+    #check:checked ~ .nav ul {
+        left: 0%;
+    }
+    .nav ul ul {
+        display: none;
+    }
+}
+@media only screen and (max-width:700px) {
+    .accountpage{
+        margin:52px auto;
+    }
+    .accountpage1{
+        margin: 25px auto;
+    }
+    .act{
+        font-size: 24px;
+    }
+    .act a{
+        font-size: 24px;
+    }
+}   
+@media only screen and (max-width:590px){
+    .accountpage{
+        margin:52px auto ;
+        /* border: 2px solid black;
+        padding: 10px;
+        width: 400px; */
+    }
+    .accountpage1{
+        margin: 25px auto;
+    }
+} 
+@media only screen and (max-width:450px){
+    .act{
+        font-size: 15px;
+    }
+    .act a{
+        font-size: 15px;
+    }
+    .ln{
+        position: unset;
+        margin-bottom: 0;
+    }
+    .ph{
+        position: unset;
+    }
+    .accountpage input{
+        width: 270px;
+    }
+    .accountpage{
+        width: 295px;
+    } 
+    .accountpage1{
+        width: 295px;
+    }
+    .accountpage1 input{
+        width: 270px;
+    }
+}
+@media only screen and (max-width:330px){
+    .act{
+        font-size: 11px;
+    }
+    .act a{
+        font-size: 11px;
+    }
+    .accountpage input{
+        width: 222px;
+    }
+    .accountpage{
+        width: 247px;
+    } 
+    .accountpage1{
+        width: 247px;
+    }
+    .accountpage1 input{
+        width: 222px;
+    } 
+}    

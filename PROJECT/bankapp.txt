@@ -1,0 +1,89 @@
+using System;
+using System.Windows.Forms;
+
+namespace BankApp
+{
+    public class Account
+    {
+        // Variables
+        protected string accountNumber;
+        protected double balance;
+        protected double annualInterestRate;
+        protected DateTime dateCreated;
+
+        // Constructor
+        public Account(string accNumber, double initialBalance, double interestRate)
+        {
+            accountNumber = accNumber;
+            balance = initialBalance;
+            annualInterestRate = interestRate;
+            dateCreated = DateTime.Now;
+        }
+
+        // Methods
+        public void Deposit(double amount)
+        {
+            balance += amount;
+        }
+
+        public virtual bool Withdraw(double amount)
+        {
+            if (amount <= balance)
+            {
+                balance -= amount;
+                return true;
+            }
+            return false;
+        }
+
+        public double CalculateInterest()
+        {
+            return balance * (annualInterestRate / 100);
+        }
+    }
+
+    public class SavingsAccount : Account
+    {
+        // Additional variable
+        private double overdraftLimit;
+
+        // Constructor
+        public SavingsAccount(string accNumber, double initialBalance, double interestRate, double overdraftLimit)
+            : base(accNumber, initialBalance, interestRate)
+        {
+            this.overdraftLimit = overdraftLimit;
+        }
+
+        // Method to show account details
+        public void ShowAccountDetails()
+        {
+            string details = $"Account Number: {accountNumber}\nBalance: {balance}\nInterest Rate: {annualInterestRate}%\nOverdraft Limit: {overdraftLimit}\nDate Created: {dateCreated}";
+            MessageBox.Show(details, "Account Details", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        // Override Withdraw method to account for overdraft
+        public override bool Withdraw(double amount)
+        {
+            if (balance - amount >= -overdraftLimit)
+            {
+                balance -= amount;
+                return true;
+            }
+            return false;
+        }
+    }
+
+    public partial class MainForm : Form
+    {
+        public MainForm()
+        {
+            InitializeComponent();
+        }
+
+        private void btnShowAccountDetails_Click(object sender, EventArgs e)
+        {
+            SavingsAccount savingsAccount = new SavingsAccount("123456789", 1000, 5, 200);
+            savingsAccount.ShowAccountDetails();
+        }
+    }
+}
